@@ -329,7 +329,7 @@
     UITableViewCell *cell = (UITableViewCell *)sender.superview;
     NSArray *titlesNames = @[@"showSkipNotice", @"showButtonsInPlayer", @"hideStartEndButtonInPlayer", @"showModifiedTime", @"skipAudioNotification", @"enableSkipCountTracking"];
     NSIndexPath *indexPath = [self.tableView indexPathForCell:cell];
-    [self.settings setValue:@(sender.on) forKey:titlesNames[indexPath.section-11]];
+    [self.settings setValue:@(sender.on) forKey:titlesNames[indexPath.section-12]];
     [self writeSettings];
 }
 
